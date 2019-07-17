@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa237f00.chunk.css",
+    "main.js": "/static/js/main.6f0be237.chunk.js",
+    "main.js.map": "/static/js/main.6f0be237.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.283eb7fd.chunk.js": "/static/js/2.283eb7fd.chunk.js",
+    "static/js/2.283eb7fd.chunk.js.map": "/static/js/2.283eb7fd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fb1e39c45bc1e0f8049333ecd7dc8961.js": "/precache-manifest.fb1e39c45bc1e0f8049333ecd7dc8961.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fa237f00.chunk.css.map": "/static/css/main.fa237f00.chunk.css.map",
+    "static/media/Jennifer_banner.png": "/static/media/Jennifer_banner.ff0209f6.png"
+  }
+}
