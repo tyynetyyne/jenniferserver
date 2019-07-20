@@ -10,7 +10,7 @@ const requestLogger = (request, response, next) => {
   console.log('---')
   next()
 }
-
+//mongodb+srv://jenniferbandi:<password>@cluster0-xn58j.mongodb.net/test?retryWrites=true&w=majority
 app.use(bodyParser.json())
 app.use(requestLogger);
 app.use(cors());
@@ -175,15 +175,15 @@ app.get('/', (req, res) => {
   res.send('<h1>Jennifer API</h1>')
 })
 
-app.get('/gigs', (req, res) => {
+app.get('/api/gigs', (req, res) => {
   res.json(gigs)
 })
 
-app.get('/songs', (req, res) => {
+app.get('/api/songs', (req, res) => {
   res.json(songs)
 })
 
-app.get('/gigs/:id', (request, response) => {
+app.get('/api/gigs/:id', (request, response) => {
   const id = Number(request.params.id);
   const gig = gigs.find(gig => gig.id === id)
   if (gig) {
@@ -193,14 +193,14 @@ app.get('/gigs/:id', (request, response) => {
   }
 })
 
-app.delete('/gigs/:id', (request, response) => {
+app.delete('/api/gigs/:id', (request, response) => {
   const id = Number(request.params.id)
   gigs = gigs.filter(gig => gig.id !== id)
 
   response.status(204).end()
 })
 
-app.post('/gigs', (request, response) => {
+app.post('/api/gigs', (request, response) => {
   const body = request.body
   console.log(body)
 
